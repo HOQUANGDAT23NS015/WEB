@@ -1,0 +1,98 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Background color */
+}
+
+.container {
+    width: 90%; /* Use a percentage for fluidity */
+    max-width: 1200px; /* Max width for larger screens */
+    margin: 0 auto; /* Center container */
+    padding: 20px; /* Padding for spacing */
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px;
+    background-color: #1690A7; /* Background color */
+    color: white;
+}
+
+.logo {
+    font-size: 24px; /* Logo size */
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px; /* Space between links */
+}
+
+/* Chart styles */
+.chart {
+    width: 100%; /* Full width */
+    height: var(--percent, 50%); /* Use CSS variable for height */
+    background-color: #03a9f4; /* Default background */
+    border-radius: 4px; /* Rounded corners */
+    margin: 10px 0; /* Spacing between charts */
+    transition: height 0.3s; /* Smooth height transition */
+}
+
+.chart:hover {
+    height: 100%; /* Expand on hover */
+}
+
+/* Text styles */
+.chu {
+    line-height: 20px; /* Line height */
+    font-weight: bold; /* Bold text */
+    color: black;
+    transition: color 0.3s; /* Transition for color change */
+}
+
+/* Button styles */
+.button {
+    padding: 10px 15px; /* Button padding */
+    background-color: #4caf50; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    padding: 20px; /* Padding */
+    background-color: white; /* Modal background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px; /* Adjust gap */
+    }
+
+    .chart {
+        margin: 5px 0; /* Reduce margin */
+    }
+
+    .modal {
+        width: 90%; /* Full width on mobile */
+        max-width: none; /* Remove max-width */
+    }
+}

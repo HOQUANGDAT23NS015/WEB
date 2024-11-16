@@ -1,0 +1,15 @@
+.taikhoanchinhthuc{
+        
+    height: 150px;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+.dieukhoan{
+    position: relative;
+    
+    height: 150px;
+    width: 101%;
+    background-color: black;
+    color: white;
+}
